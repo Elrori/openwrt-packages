@@ -46,6 +46,7 @@ jobs:
           libncursesw5-dev libssl-dev python python2.7-dev python3 unzip wget \
           python3-distutils python3-setuptools rsync subversion swig time \
           xsltproc zlib1g-dev
+          git submodule update --init --recursive
           ./scripts/feeds update -a
           ./scripts/feeds install -a
           git clone --recursive https://github.com/elrori/openwrt-packages package/3rd
